@@ -4,6 +4,7 @@ This directory contains the authors' supplied simulation and inference scripts u
 
 - `original_code/estimation/`: estimation and simulation code.
 - `original_code/inference/`: post-selection inference simulation code.
+- `original_code/compare_nuisance/`: nuisance-function comparison code used for the revised manuscript.
 
 The installable package functions in `R/` are assembled from these supplied sources. Hyperparameters for nuisance learners can be passed explicitly to `prepare_dat()` through `outcome_args` and `propensity_args`.
 
@@ -33,3 +34,5 @@ mydat_rf <- prepare_dat(
   use_dc_screening = FALSE
 )
 ```
+
+The reproducibility tree in this release was rebuilt from the authors' updated `code to share V2.zip` archive.

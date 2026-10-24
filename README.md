@@ -148,6 +148,7 @@ The original code supplied for the simulation and inference studies is retained 
 ```text
 inst/reproducibility/original_code/estimation/
 inst/reproducibility/original_code/inference/
+inst/reproducibility/original_code/compare_nuisance/
 ```
 
 After installation, locate these files with:
@@ -156,7 +157,7 @@ After installation, locate these files with:
 system.file("reproducibility", "original_code", package = "SparsityAwareCATE")
 ```
 
-The principal simulation driver is `simu()`. The original scripts are included unchanged so that the research code remains auditable.
+The principal simulation driver is `simu()`. The `compare_nuisance/` directory contains the nuisance-function comparison scripts, including the random-forest specification with `ntree = 150` used in the revised manuscript. The supplied V2 scripts are retained unchanged under `inst/reproducibility/original_code/` so that the research code remains auditable.
 
 ## Data
 

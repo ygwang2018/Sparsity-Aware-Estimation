@@ -94,7 +94,7 @@ simu(
   beta0 = beta0,
   treat_prob = treat_prob,
   balance = balance,
-  nui_app = "bagging",
+  nui_app = "bagging", ## code only support bagging
   seedstart = seedstart,
   Nsimu = Nsimu,
   taskID = taskID,

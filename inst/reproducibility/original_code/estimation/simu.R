@@ -432,16 +432,8 @@ once_simu <- function(n, K, p, rho, beta0,
         nfold = 10,
         outcome_method = "rf",
         propensity_method = "rf",
-        outcome_args = list(
-          ntree = 300,
-          nodesize = 40,
-          mtry = 10
-        ),
-        propensity_args = list(
-          ntree = 300,
-          nodesize = 40,
-          mtry = 10
-        ),
+        outcome_args = list(ntree = 150),
+        propensity_args = list(ntree = 150),
         seed = seed + 1000,
         trim_e = 1e-4,
         use_group_for_nuisance = TRUE,

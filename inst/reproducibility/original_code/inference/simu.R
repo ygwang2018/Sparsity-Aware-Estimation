@@ -382,28 +382,7 @@ once_simu <- function(n, K, p, rho, beta0, treat_prob, balance, seed,
   # ---------------------------------------------------------
   # Estimated nuisance version
   # ---------------------------------------------------------
-  if (nui_app == "rf") {
-    mydat <- prepare_dat(
-      dat,
-      K = K,
-      nfold = 10,
-      outcome_method = "rf",
-      propensity_method = "rf",
-      outcome_args = list(
-        ntree = 500, nodesize = 30, mtry = 8
-      ),
-      propensity_args = list(
-        ntree = 500, nodesize = 80, mtry = 8
-      ),
-      seed = seed,
-      trim_e = 1e-4,
-      use_group_for_nuisance = TRUE,
-      add_group_interactions = FALSE,
-      calibrate_propensity = TRUE
-    )
-
-  } else {
-    mydat <- prepare_dat(
+   mydat <- prepare_dat(
          dat,
          K = K,
          nfold = 10,
@@ -416,7 +395,6 @@ once_simu <- function(n, K, p, rho, beta0, treat_prob, balance, seed,
          use_group_for_nuisance = TRUE,
          add_group_interactions = !TRUE,
          calibrate_propensity = TRUE )
-  }
 
   # ---------------------------------------------------------
   # Known nuisance version

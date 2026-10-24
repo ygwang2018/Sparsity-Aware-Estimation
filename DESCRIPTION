@@ -1,7 +1,7 @@
 Package: SparsityAwareCATE
 Type: Package
 Title: Sparsity- and Homogeneity-Aware Estimation of Group-Specific CATEs
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: c(
     person("Xin", "Ye", role = "aut"),
     person("You-Gan", "Wang", email = "you-gan.wang@uq.edu.au", role = c("aut", "cre"))
