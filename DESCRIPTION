@@ -1,0 +1,48 @@
+Package: SparsityAwareCATE
+Type: Package
+Title: Sparsity- and Homogeneity-Aware Estimation of Group-Specific CATEs
+Version: 0.1.0
+Authors@R: c(
+    person("Xin", "Ye", role = "aut"),
+    person("You-Gan", "Wang", email = "you-gan.wang@uq.edu.au", role = c("aut", "cre"))
+    )
+Description: Implements penalized R-learning methods for group-specific conditional
+    average treatment effects with simultaneous group-specific sparsity and global
+    cross-group homogeneity recovery. The package includes cross-fitted nuisance
+    estimation, optional heteroscedasticity-motivated loss weights, an ADMM solver,
+    local and pooled comparison estimators, structured post-selection inference,
+    simulation utilities, and the code used in the associated manuscript.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1.0)
+Imports:
+    MASS,
+    glmnet,
+    grpreg,
+    ipred,
+    randomForest,
+    stats,
+    utils
+Suggests:
+    testthat (>= 3.0.0),
+    remotes
+Config/testthat/edition: 3
+URL: https://github.com/ygwang2018/Sparsity-Aware-Estimation
+BugReports: https://github.com/ygwang2018/Sparsity-Aware-Estimation/issues
+NeedsCompilation: no
+Collate:
+    'utils.R'
+    'prepare.R'
+    'prepare_reg_bag.R'
+    'wloss_crossfit.R'
+    'gdat.R'
+    'method_loc_lasso.R'
+    'method_pooled_lasso.R'
+    'method_glasso.R'
+    'method_hlasso.R'
+    'method_R2lasso.R'
+    'method_oracle.R'
+    'method_prop_admm.R'
+    'inference.R'
+    'simulation.R'

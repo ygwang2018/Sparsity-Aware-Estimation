@@ -1,0 +1,8 @@
+bibentry(
+  bibtype = "Article",
+  title = "Sparsity- and Homogeneity-Aware Estimation of Group-Specific Conditional Average Treatment Effects",
+  author = c(person("Xin", "Ye"), person("You-Gan", "Wang")),
+  year = "2026",
+  note = "Manuscript",
+  textVersion = "Ye, X. and Wang, Y.-G. (2026). Sparsity- and Homogeneity-Aware Estimation of Group-Specific Conditional Average Treatment Effects. Manuscript."
+)
